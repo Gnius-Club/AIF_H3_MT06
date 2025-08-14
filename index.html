@@ -1,24 +1,287 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Playbook — 3º Preparatoria — Misión 06: Del Prompt al Prototipo Visual</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
+  <header hidden>
+    <h1><span class="book-icon">📋</span> <strong>Playbook Misión 06: Del Prompt al Prototipo Visual</strong></h1>
+    <div class="header-widgets">
+      <div class="timer-container">
+        <span id="timer" hidden>⏱️ 00:00</span>
+        <button id="startStop" hidden>Start</button>
+        <button id="reset" hidden>Reset</button>
+      </div>
+      <div class="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle-input" hidden>
+          <span class="slider round"></span>
+        </label>
+        <i class="fas fa-moon"></i>
+      </div>
+    </div>
+  </header>
+  <div class="main-container">
+    <aside class="activity-list">
+      <h2>Actividades</h2>
+      <ul>
+        <li><a href="#activity-0">📝 De un Vistazo: Misión 06: Del Prompt al Prototipo Visual</a></li>
+        <li><a href="#activity-1">Saludo Interactivo con IA</a></li>
+        <li><a href="#activity-2">“I Can Statement” + Desafío</a></li>
+        <li><a href="#activity-3">AI GYM</a></li>
+        <li><a href="#activity-4">Brain Spark</a></li>
+        <li><a href="#activity-5">GNIUS STORM</a></li>
+      </ul>
+      <div class="sidebar-info" hidden>
+        <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+        <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+      </div>
+    </aside>
+    <main id="playbook" class="content playbook">
+      <div class="progress-bar" hidden>
+        <div class="progress"></div>
+      </div>
+      <button id="toggle-dialogues" hidden>Mostrar todos los diálogos</button>
+
+      <!-- 0) De un Vistazo -->
+      <section class="activity-card" id="activity-0">
+        <h2 class="activity-title">📝 De un Vistazo: Misión 06: Del Prompt al Prototipo Visual</h2>
+        <p class="activity-purpose">Resumen de objetivos, secuencia y entregables.</p>
+        <div class="overview">
+          <section class="overview-block">
+            <h3>Objetivos e “I Can”</h3>
+            <ul>
+              <li>Puedo utilizar plataformas text-to-website para generar prototipos visuales a partir de prompts descriptivos.</li>
+              <li>Puedo inspeccionar y comprender el código HTML y CSS generado por IA para identificar su estructura y función.</li>
+            </ul>
+          </section>
+          <section class="overview-block">
+            <h3>Secuencia y tiempos</h3>
+            <ol>
+              <li>Saludo Interactivo con IA — 3 min</li>
+              <li>“I Can” + Desafío — 5–7 min</li>
+              <li>AI GYM — 10–12 min</li>
+              <li>Brain Spark — 17–20 min</li>
+              <li>GNIUS STORM — 5 min</li>
+            </ol>
+          </section>
+          <section class="overview-block">
+            <h3>Entregable del Micro-Proyecto</h3>
+            <ul>
+              <li>Captura de pantalla anotada del código HTML generado por WebWave, con explicaciones de 2-3 secciones clave.</li>
+            </ul>
+          </section>
+          <section class="overview-block">
+            <h3>Criterios de calidad</h3>
+            <ul>
+              <li>Claridad y precisión del prompt utilizado para WebWave AI.</li>
+              <li>Identificación correcta de elementos HTML y sus funciones.</li>
+              <li>Explicaciones claras y concisas de las secciones anotadas.</li>
+              <li>Evidencia de inspección de código (uso de DevTools).</li>
+            </ul>
+          </section>
+          <section class="overview-block">
+            <h3>Materiales y preparación</h3>
+            <ul>
+              <li>Proyector e internet</li>
+              <li>WebWave AI</li>
+              <li>Herramientas de desarrollador del navegador (DevTools)</li>
+              <li>Ejemplo mínimo listo (prompt y resultado WebWave AI)</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <!-- 1) Saludo Interactivo con IA -->
+      <section class="activity-card" id="activity-1">
+        <h2 class="activity-title">Saludo Interactivo con IA</h2>
+        <p class="activity-purpose">Enmarcar foco y activar a Xolo con perfil/intereses.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
+              <p class="step-instructions">Proyectar Diapositiva 2. Presenta el tema y su valor profesional: transformar ideas en prototipos visuales tangibles y comprender su estructura interna.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Equipo: hoy exploraremos cómo las plataformas text-to-website nos permiten pasar rápidamente de una idea a un prototipo visual. Nuestro objetivo no es solo generar, sino también entender qué construye la IA, inspeccionando el código subyacente.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Activación con Xolo</h3>
+              <p class="step-instructions">Cada estudiante envía a Xolo: “Hola Xolo, soy [Nombre], perfil [X]; me interesa [Y]. Misión 06. Necesito foco en prototipado rápido y comprensión del código HTML/CSS generado por IA.”</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Activen a Xolo con su perfil e intereses. Confirmen que comprendieron el criterio de hoy y sigan sus indicaciones personalizadas para esta misión de prototipado y auditoría de código.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 2) “I Can” + Desafío -->
+      <section class="activity-card" id="activity-2">
+        <h2 class="activity-title">“I Can Statement” + Desafío</h2>
+        <p class="activity-purpose">Alinear expectativas y definir el reto práctico.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Presenta el reto</h3>
+              <p class="step-instructions">Proyectar Diapositiva 3. Describe el reto: generar un prototipo web con WebWave AI y analizar su código fuente para entender cómo la IA lo construyó.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">El reto es doble: primero, usar WebWave AI para crear un prototipo web funcional a partir de un prompt. Segundo, y más importante, "ver a través del velo" de la IA, inspeccionando el código HTML y CSS generado para comprender su estructura y funcionalidad. Evaluaremos su capacidad de prototipado y su entendimiento del código generado.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Escribe tu “I Can”</h3>
+              <p class="step-instructions">Proyectar Diapositiva 4. Cada estudiante redacta 1 “I Can” alineado al entregable.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Formula tu “Puedo…” en 1 frase. Por ejemplo: "Puedo generar un prototipo visual con WebWave AI y puedo explicar la función de sus componentes HTML/CSS a través de la inspección."</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3) AI GYM -->
+      <section class="activity-card" id="activity-3">
+        <h2 class="activity-title">AI GYM</h2>
+        <p class="activity-purpose">Formalizar el marco/técnica/herramienta central de la misión.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Marco del día</h3>
+              <p class="step-instructions">Proyectar Diapositiva 5. Introduce WebWave AI como una herramienta de Text-to-Website y enfatiza la importancia de inspeccionar el código HTML/CSS generado.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Hoy, nuestro marco es la generación de prototipos visuales con plataformas Text-to-Website, específicamente WebWave AI. Esta herramienta nos permite pasar de un prompt a un sitio web estático en segundos. Sin embargo, nuestro rol como directores de proyecto de IA no termina en la generación. Debemos "ver a través del velo", es decir, inspeccionar el código HTML y CSS que la IA produce. Esto es crucial para auditar la calidad, entender la estructura y, si es necesario, tomar control y modificarlo. Eviten quedarse solo con el resultado visual; profundicen en el código.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Mini-demostración</h3>
+              <p class="step-instructions">Proyectar Diapositiva 6. Construye un ejemplo mínimo: un prompt para WebWave AI, muestra el resultado visual y luego usa DevTools para inspeccionar un par de elementos HTML/CSS.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Observen este prompt simple: "Un sitio web para una cafetería acogedora con un botón de 'Ver Menú' y un formulario de contacto." WebWave AI lo genera. Ahora, abran las herramientas de desarrollador (DevTools). Fíjense cómo podemos seleccionar el botón "Ver Menú" y ver su etiqueta `&lt;button&gt;` en el HTML, y sus propiedades `background-color` o `padding` en el CSS. ¿Ven cómo el diseño se traduce a código?</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 3 — Check rápido</h3>
+              <p class="step-instructions">Proyectar Diapositiva 7. Dos preguntas de verificación: ¿Qué nos permite hacer WebWave AI? ¿Por qué es importante inspeccionar el código generado?</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Pregunta 1: ¿Qué tipo de prototipos podemos generar rápidamente con WebWave AI? Pregunta 2: ¿Por qué no basta con ver el resultado visual y debemos inspeccionar el código HTML/CSS?</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4) Brain Spark -->
+      <section class="activity-card" id="activity-4">
+        <h2 class="activity-title">Brain Spark</h2>
+        <p class="activity-purpose">Producir el entregable tangible del Micro-Proyecto.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Producción</h3>
+              <p class="step-instructions">Proyectar Diapositiva 8. Utiliza WebWave AI con un prompt de tu elección. Luego, toma una captura de pantalla del código HTML generado (usando DevTools) y anota 2-3 secciones clave explicando su función.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">N/A</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Iteración</h3>
+              <p class="step-instructions">Proyectar Diapositiva 9. Refina tus anotaciones para mayor claridad o intenta modificar una propiedad CSS en DevTools para ver el cambio en tiempo real.</p>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Antes de cerrar: valida que tus anotaciones sean claras y precisas. Si es posible, experimenta cambiando un color o una fuente en DevTools para ver cómo se refleja en el código.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 3 — Evidencia</h3>
+              <p class="step-instructions">Proyectar Diapositiva 10. Solicita la captura de pantalla anotada del código HTML generado.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Entrega con nombre: M06_PrototipoVisual_[TuNombre]. Incluye la captura de pantalla anotada con tus explicaciones de 2-3 secciones clave del código HTML.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 5) GNIUS STORM -->
+      <section class="activity-card" id="activity-5">
+        <h2 class="activity-title">GNIUS STORM</h2>
+        <p class="activity-purpose">Exhibir resultados y cerrar con síntesis accionable.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Showcase relámpago</h3>
+              <p class="step-instructions">2–3 personas/equipos muestran su captura anotada (30–45 s c/u), destacando una sección clave y su función.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Enfoca tu presentación en la decisión de tu prompt, una sección clave del código que anotaste y por qué es importante entenderla.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
+              <p class="step-instructions">Proyectar Diapositiva 11. Síntesis: 1 aprendizaje clave sobre text-to-website o inspección de código, 1 criterio que más impactó, y 1 siguiente paso aplicable.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Síntesis: Hoy aprendimos a prototipar rápidamente y, crucialmente, a entender la 'caja negra' de la IA. El criterio clave fue la capacidad de inspeccionar y comprender el código generado. Siguiente paso aplicado: usar esta habilidad para auditar cualquier código generado por IA y tomar decisiones informadas sobre su uso o modificación.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
   <script src="script.js"></script>
 </body>
-
 </html>
