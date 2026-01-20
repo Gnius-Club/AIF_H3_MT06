@@ -6,7 +6,7 @@
     <title>Playbook-S3-TM06</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -17,18 +17,27 @@
                 <button id="global-start-stop">Start</button>
                 <button id="global-reset">Reset</button>
             </div>
+            <!-- Estructura del Theme Toggle agregada -->
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
         </div>
     </header>
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
             <ul>
-                <li><a href="#activity-0">📝 De un Vistazo</a></li>
-                <li><a href="#activity-1">1. Intro</a></li>
-                <li><a href="#activity-2">2. A.I. Gym</a></li>
-                <li><a href="#activity-3">3. Brain Spark</a></li>
-                <li><a href="#activity-4">4. Gnius STORM</a></li>
-                <li><a href="#activity-5">5. Evidencias</a></li>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
             </ul>
         </aside>
         <main class="content">
@@ -49,8 +58,12 @@
                 <div class="command-section xolo-prompt">
                     <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
                     <div class="prompt-box">
+                        <!-- Estructura de botón de copiado agregada -->
                         <div class="prompt-header">
                             <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
                         </div>
                         <pre id="main-prompt">Explícame cómo una IA convierte una descripción textual en un sitio web visual. ¿Qué papel cumplen el HTML y el CSS en el prototipo generado, y cómo puedo inspeccionar el código para entender su estructura?</pre>
                     </div>
@@ -158,6 +171,8 @@
                     <h2>🚀 Actividad 1: Intro a la Misión</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 2:00</span>
+                        <!-- Botón de timer agregado -->
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -202,6 +217,8 @@
                     <h2>🧠 Actividad 2: A.I. Gym</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 8:00</span>
+                        <!-- Botón de timer agregado -->
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -247,6 +264,7 @@
                 </div>
                 
                 <div class="optional-script">
+                    <!-- Javascript inline eliminado -->
                     <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
                     <div class="collapsible-content">
                         <p class="dialogue assistant">Ahora vamos a dar un paso importante en nuestro camino como creadores digitales. Vamos a descubrir qué hay detrás de las páginas web que la IA construye para nosotros. Abran su chat con XOLO y salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él sobre cómo la IA convierte palabras en código visual. Pregúntenle cómo pueden usar las herramientas de su navegador para inspeccionar ese código y no se queden con ninguna duda.</p>
@@ -259,6 +277,8 @@
                     <h2>💡 Actividad 3: Brain Spark</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 20:00</span>
+                        <!-- Botón de timer agregado -->
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -308,6 +328,7 @@
                     </div>
                 </div>
                 <div class="optional-script">
+                    <!-- Javascript inline eliminado -->
                     <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
                     <div class="collapsible-content">
                         <p class="dialogue assistant">¡Es hora de crear y auditar! Vamos a usar WebWave AI para dar vida a una idea. Primero, trabajen con XOLO para definir un prompt potente que capture su identidad visual. Una vez que la IA genere el sitio, no se detengan ahí: usen el 'Vibe Coding' para inspeccionar las entrañas de su página. Por ejemplo, podrían crear un portafolio personal o una landing page para un proyecto social. Identifiquen 2 o 3 secciones, como el menú o el banner principal, y anoten cómo están construidas. Si encuentran algo que no entienden o el código parece un desastre, pregúntenle a XOLO, él los ayudará a depurar y entender.</p>
@@ -327,6 +348,8 @@
                     <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 5:00</span>
+                        <!-- Botón de timer agregado -->
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -381,6 +404,8 @@
                     <h2>✅ Actividad 5: Entrega de Evidencias</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 5:00</span>
+                        <!-- Botón de timer agregado -->
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -426,4 +451,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-</html></html>
+</html>
