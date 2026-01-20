@@ -1,297 +1,429 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Playbook: Sesión 6 - 3ro Preparatotia.</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-S3-TM06</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 6 - 3ro Preparatotia.</strong></h1>
-    <div class="header-widgets">
-      <div class="timer-container">
-        <span id="timer">⏱️ 00:00</span>
-        <button id="startStop">Start</button>
-        <button id="reset">Reset</button>
-      </div>
-      <div class="theme-toggle">
-        <i class="fas fa-sun"></i>
-        <label class="switch">
-          <input type="checkbox" id="theme-toggle-input">
-          <span class="slider round"></span>
-        </label>
-        <i class="fas fa-moon"></i>
-      </div>
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 6 - 3o de Preparatoria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝 De un Vistazo</a></li>
+                <li><a href="#activity-1">1. Intro</a></li>
+                <li><a href="#activity-2">2. A.I. Gym</a></li>
+                <li><a href="#activity-3">3. Brain Spark</a></li>
+                <li><a href="#activity-4">4. Gnius STORM</a></li>
+                <li><a href="#activity-5">5. Evidencias</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> usar WebWave y DevTools para realizar prototipado text-to-website e inspeccionar código para comprender la estructura vs apariencia y desarrollar un criterio para auditar lo generado por IA.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                        </div>
+                        <pre id="main-prompt">Explícame cómo una IA convierte una descripción textual en un sitio web visual. ¿Qué papel cumplen el HTML y el CSS en el prototipo generado, y cómo puedo inspeccionar el código para entender su estructura?</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Ver a través del velo: Entender que detrás de lo que vemos en una web hay un código organizado (HTML y CSS) que podemos leer y auditar.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar herramientas de desarrollo del navegador para inspeccionar y anotar secciones clave de un sitio web generado por IA.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes descripciones textuales para entender cómo la IA traduce palabras en estructuras de código específicas.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Acceso a WebWave (https://webwave.me/)</label>
+                        <label><input type="checkbox"> Acceso a JDoodle (https://www.jdoodle.com/)</label>
+                        <label><input type="checkbox"> Acceso a GitHub (https://github.com/)</label>
+                        <label><input type="checkbox"> Acceso a ChatGPT/Gemini/Claude</label>
+                        <label><input type="checkbox"> Navegador con herramientas de desarrollador (DevTools) activas</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa programación con BLOQUES y CÓDIGO en WebWave y DevTools</label>
+                        <label><input type="checkbox"> 📋 Para inspeccionar: Clic derecho en la web → 'Inspeccionar' para ver el código HTML/CSS</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Mantener seguras las contraseñas de las plataformas, cerrar sesiones al terminar y verificar la estabilidad de la conexión a internet.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre cómo la IA convierte texto en sitios web visuales (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si WebWave no genera el sitio:</strong> Refinar el prompt con descripciones más claras y verificar la conexión a internet.</li>
+                            <li><strong>Si no aparece el inspector:</strong> Asegurarse de que no esté bloqueado por políticas del navegador o usar el atajo F12 o Ctrl+Shift+I.</li>
+                            <li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
+            <div class="activity-card" id="activity-1">
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "Hoy aprenderán a ver el código oculto detrás de la magia de la IA en la web.".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Protipado de sitios web con IA y auditoría de código.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A inspeccionar el código de un sitio generado por IA para que comprendas cómo se construye la web.</p>
+                        <p><strong>Aplicación real:</strong> Los desarrolladores web y diseñadores de UX usan esta tecnología para crear prototipos rápidos y validar ideas antes de la programación final.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 2: A.I. GYM -->
+            <div class="activity-card" id="activity-2">
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo la IA traduce descripciones textuales en estructuras visuales de HTML y CSS.</li>
+                            <li>Introduce el concepto de "ver a través del velo" para entender la estructura técnica de un sitio.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar WebWave para generar prototipos visuales.</li>
+                            <li>Aprender sobre la diferencia entre estructura (HTML) y apariencia (CSS).</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
+                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar herramientas de IA para prototipar sitios y comprender su código base.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">Ahora vamos a dar un paso importante en nuestro camino como creadores digitales. Vamos a descubrir qué hay detrás de las páginas web que la IA construye para nosotros. Abran su chat con XOLO y salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él sobre cómo la IA convierte palabras en código visual. Pregúntenle cómo pueden usar las herramientas de su navegador para inspeccionar ese código y no se queden con ninguna duda.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
+            <div class="activity-card" id="activity-3">
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los Computadoras conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique prototipado text-to-website.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar WebWave AI.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Abrir las herramientas de desarrollador (DevTools) y probar.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Con Vibe Coding, ayúdame a crear un prompt descriptivo para WebWave AI alineado a mi identidad visual y user flow. Luego guíame a inspeccionar el HTML/CSS y seleccionar 2–3 secciones clave para anotarlas (qué hacen y por qué importan). Ejecuta: entrega una lista exacta de qué capturar (capturas) y qué escribiré en cada anotación."</pre>
+                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿El sitio web generado coincide exactamente con la descripción que diste en el prompt?</li>
+                            <li>¿Qué sucede en el código HTML si intentas cambiar el texto de un encabezado directamente desde el inspector?</li>
+                            <li>¿Funciona igual la visualización en modo escritorio que en modo móvil dentro del editor?</li>
+                            <li>¿Cómo te ayuda el "ver a través del velo" a identificar si la IA tomó decisiones de diseño correctas o incorrectas?</li>
+                            <li>Al observar la estructura vs la apariencia, ¿por qué es importante separar el contenido (HTML) de cómo se ve (CSS)?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear y auditar! Vamos a usar WebWave AI para dar vida a una idea. Primero, trabajen con XOLO para definir un prompt potente que capture su identidad visual. Una vez que la IA genere el sitio, no se detengan ahí: usen el 'Vibe Coding' para inspeccionar las entrañas de su página. Por ejemplo, podrían crear un portafolio personal o una landing page para un proyecto social. Identifiquen 2 o 3 secciones, como el menú o el banner principal, y anoten cómo están construidas. Si encuentran algo que no entienden o el código parece un desastre, pregúntenle a XOLO, él los ayudará a depurar y entender.</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con el prototipado básico. ¿Puedes enseñarme cómo hacer que mi sitio web incluya un script personalizado en JS para una animación interactiva?"</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
+            <div class="activity-card" id="activity-4">
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué secciones del código identificó y por qué son importantes.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué secciones del código entendiste mejor al inspeccionar tu sitio web? ¿Qué te sorprendió de la estructura?</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi sitio web usa etiquetas HTML para organizar el contenido. Me sorprendió que el CSS controla tantos detalles visuales que parecen complejos."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
+            <div class="activity-card" id="activity-5">
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-  </header>
-  <div class="main-container">
-    <aside class="activity-list">
-      <h2>Actividades</h2>
-      <ul>
-        <li><a href="#activity-0">📝</a></li>
-        <li><a href="#activity-1">1</a></li>
-        <li><a href="#activity-2">2</a></li>
-        <li><a href="#activity-3">3</a></li>
-        <li><a href="#activity-4">4</a></li>
-        <li><a href="#activity-5">5</a></li>
-      </ul>
-      <div class="sidebar-info">
-        <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-        <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-      </div>
-    </aside>
-    <main id="playbook" class="content playbook">
-      <div class="progress-bar">
-        <div class="progress"></div>
-      </div>
-      <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
-      <!-- 0) De un Vistazo -->
-      <section class="activity-card" id="activity-0">
-        <h2 class="activity-title"><span class="book-icon">📝</span> De un Vistazo: Sesión 6 - 3ro Preparatotia.</h2>
-        <p class="overview-subtitle">Resumen de objetivos, secuencia y entregables de la sesión.</p>
-        <div class="overview-table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                        <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <strong>Objetivos de aprendizaje:</strong>
-                            <p>Al final de la sesión, los estudiantes podrán:</p>
-                            <ul>
-                                <li>Utilizar plataformas text-to-website para generar rápidamente prototipos visuales a partir de descripciones textuales.</li>
-                                <li>Conectar la representación visual de un sitio web con el código subyacente que lo estructura (HTML) y le da estilo (CSS).</li>
-                                <li>Inspeccionar el código generado por una IA para comprender su estructura básica y cómo se traduce un prompt en un resultado tangible.</li>
-                                <li><strong>Objetivo general de la sesión:</strong> Que los estudiantes aprendan a utilizar herramientas de prototipado rápido basadas en IA, comprendiendo la relación fundamental entre un prompt descriptivo, el prototipo visual y el código HTML/CSS generado.</li>
-                            </ul>
-                            <strong>Secuencia Didáctica:</strong>
-                            <ol>
-                              <li><strong>Actividad 1:</strong> Saludo Interactivo con IA — 3 min</li>
-                              <li><strong>Actividad 2:</strong> “I Can” + Desafío — 5–7 min</li>
-                              <li><strong>Actividad 3:</strong> AI GYM — 10–12 min</li>
-                              <li><strong>Actividad 4:</strong> Brain Spark — 17–20 min</li>
-                              <li><strong>Actividad 5:</strong> GNIUS STORM — 5 min</li>
-                            </ol>
-                            <strong>Entregable Clave:</strong>
-                            <ul>
-                              <li>Un prompt descriptivo y el prototipo web generado (captura de pantalla o link), junto con una breve reflexión sobre una sección del código HTML/CSS inspeccionado.</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <strong>Materiales y preparación:</strong>
-                            <ul>
-                              <li>Proyector e internet</li>
-                              <li>Plataforma text-to-website (ej. v0.dev, u otra)</li>
-                              <li>Herramientas de desarrollador del navegador (DevTools)</li>
-                              <li>Ejemplo mínimo listo (prompt y resultado de la plataforma)</li>
-                              <li>Presentación (10 diapositivas)</li>
-                            </ul>
-                            <strong>Criterios de calidad:</strong>
-                            <ul>
-                              <li>El prototipo visual refleja fielmente la descripción del prompt.</li>
-                              <li>La inspección del código demuestra una comprensión básica de la relación entre etiquetas HTML y elementos visuales.</li>
-                              <li>El prompt es claro y específico.</li>
-                              <li>Evidencia de inspección de código (uso de DevTools).</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-      </section>
-
-      <!-- 1) Saludo Interactivo con IA -->
-      <section class="activity-card" id="activity-1">
-        <h2 class="activity-title">Saludo Interactivo con IA</h2>
-        <p class="activity-purpose">Enmarcar foco y activar a Xolo con perfil/intereses.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 2) Presenta el tema y su valor profesional: transformar ideas en prototipos visuales tangibles y comprender su estructura interna.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Equipo: hoy exploraremos cómo las <strong>plataformas text-to-website</strong> nos permiten pasar rápidamente de una idea a un <strong>prototipo visual</strong>. Nuestro objetivo no es solo generar, sino también entender qué construye la IA, inspeccionando el <strong>código subyacente</strong>.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Activación con Xolo</h3>
-              <p class="step-instructions">Cada estudiante envía a Xolo: <strong>“Hola Xolo, soy [Nombre], perfil [X]; me interesa [Y]. Estoy en la sesión de prototipado rápido. Necesito foco en la comprensión del código HTML/CSS generado por IA.”</strong></p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Activen a Xolo con su perfil e intereses. Confirmen que comprendieron el criterio de hoy y sigan sus indicaciones personalizadas para esta misión de <strong>prototipado y auditoría de código</strong>.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 2) “I Can” + Desafío -->
-      <section class="activity-card" id="activity-2">
-        <h2 class="activity-title">“I Can Statement” + Desafío</h2>
-        <p class="activity-purpose">Alinear expectativas y definir el reto práctico.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Presenta el reto</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 3) Describe el reto: generar un prototipo web con una plataforma text-to-website y analizar su código fuente para entender cómo la IA lo construyó.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">El reto es doble: primero, usar una <strong>plataforma text-to-website</strong> para crear un <strong>prototipo web</strong> funcional a partir de un <strong>prompt</strong>. Segundo, y más importante, "ver a través del velo" de la IA, inspeccionando el <strong>código HTML y CSS</strong> generado para comprender su estructura y funcionalidad. Evaluaremos su capacidad de prototipado y su entendimiento del código generado.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Escribe tu “I Can”</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 4) Cada estudiante redacta 1 “I Can” alineado al entregable.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Formula tu “Puedo…” en 1 frase. Por ejemplo: "Puedo generar un <strong>prototipo visual</strong> con una herramienta IA y puedo explicar la función de sus componentes <strong>HTML/CSS</strong> a través de la inspección."</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 3) AI GYM -->
-      <section class="activity-card" id="activity-3">
-        <h2 class="activity-title">AI GYM</h2>
-        <p class="activity-purpose">Formalizar el marco/técnica/herramienta central de la misión.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Marco del día</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 5) Introduce las herramientas Text-to-Website y enfatiza la importancia de inspeccionar el código HTML/CSS generado.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Hoy, nuestro marco es la generación de <strong>prototipos visuales</strong> con plataformas <strong>Text-to-Website</strong>. Estas herramientas nos permiten pasar de un <strong>prompt</strong> a un <strong>sitio web estático</strong> en segundos. Sin embargo, nuestro rol como directores de proyecto de IA no termina en la generación. Debemos "ver a través del velo", es decir, <strong>inspeccionar el código HTML y CSS</strong> que la IA produce. Esto es crucial para auditar la calidad, entender la estructura y, si es necesario, tomar control y modificarlo. Eviten quedarse solo con el resultado visual; profundicen en el código.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Mini-demostración</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 6) Modela en vivo cómo pedirle a Xolo que explique el proceso de conversión de texto a web.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant"><strong>“Xolo, explícame cómo una IA convierte una descripción textual en un sitio web visual. ¿Qué papel cumplen el HTML y el CSS en el prototipo generado, y cómo puedo inspeccionar el código para entender su estructura?”</strong></p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 3 — Check rápido</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 7) Dos preguntas de verificación: ¿Qué nos permite hacer una plataforma text-to-website? ¿Por qué es importante inspeccionar el código generado?</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Pregunta 1: ¿Qué tipo de <strong>prototipos</strong> podemos generar rápidamente con una plataforma text-to-website? Pregunta 2: ¿Por qué no basta con ver el resultado visual y debemos inspeccionar el <strong>código HTML/CSS</strong>?</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 4) Brain Spark -->
-      <section class="activity-card" id="activity-4">
-        <h2 class="activity-title">Brain Spark</h2>
-        <p class="activity-purpose">Producir el entregable tangible del Micro-Proyecto.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Producción</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 8) Utiliza una plataforma text-to-website con un prompt de tu elección. Luego, toma una captura de pantalla del código HTML generado (usando DevTools) y anota 2-3 secciones clave explicando su función.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">N/A</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Iteración</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 9) Refina tus anotaciones para mayor claridad o intenta modificar una propiedad CSS en DevTools para ver el cambio en tiempo real.</p>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Antes de cerrar: valida que tus <strong>anotaciones</strong> sean claras y precisas. Si es posible, experimenta cambiando un color o una fuente en <strong>DevTools</strong> para ver cómo se refleja en el código.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 3 — Evidencia</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 10) Solicita la captura de pantalla anotada del código HTML generado.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Entrega con nombre: S06_PrototipoVisual_[TuNombre]. Incluye la captura de pantalla anotada con tus explicaciones de 2-3 secciones clave del código HTML.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 5) GNIUS STORM -->
-      <section class="activity-card" id="activity-5">
-        <h2 class="activity-title">GNIUS STORM</h2>
-        <p class="activity-purpose">Exhibir resultados y cerrar con síntesis accionable.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Showcase relámpago</h3>
-              <p class="step-instructions">2–3 personas/equipos muestran su captura anotada (30–45 s c/u), destacando una sección clave y su función.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Enfoca tu presentación en la decisión de tu <strong>prompt</strong>, una sección clave del <strong>código</strong> que anotaste y por qué es importante entenderla.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 11) Síntesis: 1 aprendizaje clave sobre text-to-website o inspección de código, 1 criterio que más impactó, y 1 siguiente paso aplicable.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Síntesis: Hoy aprendimos a <strong>prototipar rápidamente</strong> y, crucialmente, a entender la '<strong>caja negra</strong>' de la IA. El criterio clave fue la capacidad de <strong>inspeccionar y comprender el código generado</strong>. Siguiente paso aplicado: usar esta habilidad para <strong>auditar</strong> cualquier <strong>código generado por IA</strong> y tomar decisiones informadas sobre su uso o modificación.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+</html></html>
